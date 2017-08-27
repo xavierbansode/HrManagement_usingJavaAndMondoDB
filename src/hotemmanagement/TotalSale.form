@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="cc" red="cc" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton1" min="-2" pref="103" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" pref="614" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" min="-2" pref="965" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="34" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel1" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton1" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="37" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Hotem Management System"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="jTable1">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="model1" type="code"/>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="} catch (UnknownHostException ex) {&#xa;            Logger.getLogger(hotemmanagement.UpdateJob.class.getName()).log(Level.SEVERE, null, ex);&#xa;        } catch (MongoException ex) {&#xa;            Logger.getLogger(hotemmanagement.UpdateJob.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }"/>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable()"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="try{&#xa;&#xa;Mongo mongoClient = new Mongo(&quot;localhost&quot;,27017);&#xa;            DB db = mongoClient.getDB(&quot;HrManagement&quot;);&#xa;            DBCollection collection = db.getCollection(&quot;CandidateDetails&quot;);&#xa;      &#xa;        String[] columnNames = {&quot;CID&quot;,&quot;Name&quot;,&quot;AddhaNumber&quot;,&quot;Qualification&quot;,&quot;Post&quot;, &quot;Skill&quot;,&quot;Job ID&quot;,&quot;Address&quot;,&quot;Type&quot;,&quot;Field&quot;,&quot;Bonus&quot;,&quot;Allowance&quot;,};&#xa;        DefaultTableModel model1 = new DefaultTableModel(columnNames, 0);&#xa;        DBCursor cursor = collection.find();&#xa;        while(cursor.hasNext()) {&#xa;                DBObject o = cursor.next();&#xa;                String custid = (String) o.get(&quot;_id&quot;); &#xa;                String custname = (String) o.get(&quot;name&quot;); &#xa;                String custaddress = (String) o.get(&quot;addharnumer&quot;); &#xa;                String pn = (String) o.get(&quot;qualification&quot;);&#xa;                String sp = (String) o.get(&quot;post&quot;); &#xa;                String dp = (String) o.get(&quot;skill&quot;); &#xa;                String cn = (String) o.get(&quot;jobid&quot;); &#xa;                String addr=(String) o.get(&quot;address&quot;);&#xa;               // String bdd = (String) o.get(&quot;BookingDate&quot;);&#xa;                &#xa;&#xa;&#xa;         &#xa;                DBCollection collection1 = db.getCollection(&quot;JobDetails&quot;);&#xa;                BasicDBObject searchdoc = new BasicDBObject();&#xa;                 searchdoc.put(&quot;_id&quot;, cn);&#xa;                DBCursor cursor1 = collection1.find(searchdoc);&#xa;                 if(cursor1.hasNext()) {&#xa;                DBObject n = cursor1.next();&#xa;                //String busid = (String) o.get(&quot;_id&quot;) ; &#xa;                String bd = (String) n.get(&quot;type&quot;) ; &#xa;                String vr = (String) n.get(&quot;field&quot;) ; &#xa;                String km = (String) n.get(&quot;bonus&quot;) ;&#xa;                String bat = (String) n.get(&quot;allowance&quot;) ; &#xa;              //  String bdp = (String) n.get(&quot;status&quot;) ; &#xa;               &#xa;                &#xa;                 model1.addRow(new Object[]{custid,custname,custaddress,pn,sp,dp,cn,addr,bd,vr,km,bat});&#xa;                 }&#xa;}"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="jButton1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Back"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
